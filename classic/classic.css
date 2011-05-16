@@ -1,0 +1,140 @@
+body,html {height:100%}
+
+body { line-height: 20px; }
+
+h1 { font-size: 2em; line-height: 1.2em; margin-bottom: 0.8em; }
+h2 { font-size: 1.5em; line-height: 1.2em; margin-bottom: 0.6em; }
+h3 { font-size: 1.3em; line-height: 1.2em; margin-bottom: 0.4em;}
+h4 { font-size: 1em; line-height: 1.2em; margin-bottom: 0 }
+
+p { margin-bottom: 1em; }
+
+a:link, a:visited, a:active { text-decoration: none; }
+
+#wrap { 
+  min-height: 100%; 
+  margin-top: 40px; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.container { width:960px; margin:0 auto; position: relative; }
+
+#header { height: 160px; }
+#header > a { font-size: 28px; font-weight: bold; display: block; padding: 0 20px; line-height: 160px;}
+
+#subheader { padding: 0 20px; background-color: #dfdfdf; }
+#subheader > h1 { font-size: 16px; margin: 0; line-height: 33px; font-weight: normal;}
+
+/* http://www.alistapart.com/articles/holygrail */
+
+#content_wrapper {
+  padding-left: 250px; /* #sidebar width */
+  padding-right: 80px;  /* #content padding */
+  overflow: hidden;
+  min-height: 450px;
+  padding-bottom: 50px;
+}
+
+#content_wrapper .column {
+  position: relative;
+  float: left;
+  padding-bottom: 20040px;  /* X + padding-bottom */
+  margin-bottom: -20000px;  /* X */
+}
+
+#content { padding: 40px; width: 100%; }
+
+#sidebar { 
+  width: 250px;          /* #sidebar width */
+  right: 330px;          /* #sidebar width + #content padding */
+  margin-left: -100%;
+}
+
+#sidebar #userpage_content_contact_site_contact {
+  padding: 20px;
+}
+
+#footer { clear: both; }
+
+/*** IE6 Fix ***/
+* html #left {
+  left: 150px;           /* RC width */
+}
+
+ul#nav { list-style: none; margin: 0; padding: 0; }
+ul#nav > li { position: relative; margin-bottom: 1px; }      
+
+ul#nav > li > a, ul#nav > li > span { display: block; line-height: 30px; padding: 0 20px; }
+
+ul#nav .disclosure {
+  font-size: 16px;
+  line-height: 30px;
+  position: absolute;
+  right: 10px;
+}
+
+ul#nav li ul {
+  list-style: none outside none;
+  left: 250px;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  position: absolute;
+  display: none;
+  background-color: #ccc;
+}
+
+ul#nav li > ul {
+  top: -5px;
+  left: 260px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 5px 15px;
+  width: 200px;
+}
+
+ul#nav li > ul img.arrow_to_left {
+  position: absolute;
+  left: -8px;
+  top: 4px;
+}
+
+
+ul#nav li:hover ul { display: block; }
+/*ul#nav li:hover ul, li.over ul{ display: block; }*/
+
+
+ul#nav li ul.children li a{
+  line-height: 30px;
+  margin: 0 !important;
+  border: none none;
+  color: #444;
+  display: block;
+}
+
+ul#nav li ul.children li.current span {
+  font-weight: bold;
+}
+
+ul#nav li ul.children li a:hover {
+  text-decoration: underline;
+  color: #444;
+}
+
+#footer {
+  position: relative;
+  line-height: 50px;
+  padding: 0 20px;
+  border-top: 1px solid #ccc;
+  text-align:right;
+  margin-top: -50px;
+}
+
+#footer ul { margin: 0; padding: 0; }
+#footer ul li { border-right: 1px solid; display: inline; margin-left: 10px; padding-right: 10px;}
+#footer ul li:last-child { border: none; padding: 0; }
+
+
