@@ -28,20 +28,24 @@ a:link, a:visited, a:active {
 }
 
 .content_wrapper {
-  margin: 20px 260px 0 0;
+  margin: 20px 270px 0 0;
 }
 
 /* reset backgrounds from site settings */
 
-#header, #footer, #nav, #content, #sidebar, #nav li a {
+#header, #footer, #nav, #content, #sidebar, #subheader, #nav li a {
   background-color: transparent !important;
+}
+
+ul#nav > li > a:hover {
+  background-color: rgba(255,255,255,0.1) !important;
 }
 
 #header {
    font-size: 15px;
    height: 80px;
    width: 100%;
-   border-bottom: 2px solid white;
+   border-bottom: 1px solid rgba(255,255,255,0.5);
    margin-bottom: 20px;
 }
 
@@ -61,14 +65,23 @@ a:link, a:visited, a:active {
   right: 0;
   width: 250px;
   top: 60px;
-  border-left: 2px solid white;
+  border-left: 1px solid rgba(255,255,255,0.5);
+}
+
+#subheader {
+  position: absolute;
+  right: 0;
+  top: 14px;
+  text-align: right;
 }
 
 #subheader h1 {
-  padding: 8px 10px;
   font-size: 14px;
-  line-height: 20px;
-  border: 2px solid white;
+  margin: 0;
+  font-weight: normal;
+  font-family: Arial,Helvetica,sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
 }
 
 #userpage_content_contact_site_contact {
@@ -83,7 +96,7 @@ a:link, a:visited, a:active {
   line-height: 40px;
   text-align: right;
   clear: both;
-  border: 2px solid white;
+  border: 1px solid rgba(255,255,255,0.5);
 }
 
 #footer a {
@@ -118,7 +131,7 @@ ul#nav {
   left: 0;
   top: 40px;
   width: 100%;
-  border-left: 2px solid white;
+  border-left: 1px solid rgba(255,255,255,0.5);
 }
 
 ul#nav > li {
@@ -133,8 +146,8 @@ ul#nav > li > span {
   padding: 0 25px;
   font-size: 13px;
   position: relative;
-  border-right: 2px solid white;
-  border-top: 2px solid white;
+  border-right: 1px solid rgba(255,255,255,0.5);
+  border-top: 1px solid rgba(255,255,255,0.5);
 }
 
 
@@ -150,12 +163,10 @@ ul#nav li ul {
   left: -999em;
   width: 200px;
   position: absolute;
-  background-color: #ccc;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  padding: 5px 15px;
+  background-color: transparent;
+  padding: 5px 0;
   z-index: 70;
-  top: 55px;
+  top: 40px;
 }
 
 ul#nav li > ul img.arrow_to_top {
@@ -177,6 +188,8 @@ ul#nav li > ul img.arrow_to_top {
 }
 
 ul#nav li ul li {
+  float: left;
+  margin-right: 20px;
   text-align: left;
   
 }
@@ -187,14 +200,14 @@ ul#nav li:hover ul, ul#menu li ul:hover { left: auto; }
 
 ul#nav li ul.children li a,
 ul#nav li ul.children li span{
+  color: #CCCCCC;
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
   line-height: 30px;
   margin: 0 !important;
-  border: none none;
-  color: #444;
-  display: block;
-  font-weight: normal;
   position: relative;
-  font-size: 13px;
+  text-transform: uppercase;
 }
 
 ul#nav li ul.children li.current span {
@@ -203,5 +216,5 @@ ul#nav li ul.children li.current span {
 
 ul#nav li ul.children li a:hover {
   text-decoration: underline;
-  color: #444;
+  color: #ccc;
 }
