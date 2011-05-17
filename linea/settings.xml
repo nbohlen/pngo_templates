@@ -10,6 +10,7 @@
   <category>
     <name>Kopfbereich</name>
     <setting>header_text_color</setting>
+    <setting>header_background_color</setting>
   </category>
   <category>
     <name>Navigation</name>
