@@ -28,12 +28,13 @@ a:link, a:visited, a:active {
 }
 
 .content_wrapper {
-  margin: 20px 270px 0 0;
+  margin: 40px 270px 80px 0;
+  min-height: 350px;
 }
 
 /* reset backgrounds from site settings */
 
-#header, #footer, #nav, #content, #sidebar, #subheader, #nav li a {
+#footer, #nav, #content, #sidebar, #subheader{
   background-color: transparent !important;
 }
 
@@ -161,12 +162,12 @@ ul#nav .disclosure {
 
 ul#nav li ul {
   left: -999em;
-  width: 200px;
   position: absolute;
   background-color: transparent;
   padding: 5px 0;
   z-index: 70;
   top: 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
 }
 
 ul#nav li > ul img.arrow_to_top {
@@ -194,7 +195,7 @@ ul#nav li ul li {
   
 }
 
-ul#nav li:hover ul, ul#menu li ul:hover { left: auto; }
+ul#nav li:hover ul, ul#menu li ul:hover { left: 0; }
 /*ul#nav li:hover ul, li.over ul{ display: block; }*/
 
 
