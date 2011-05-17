@@ -6,10 +6,8 @@ $(function () {
   // $('<img src="http://cdn.pagengo.de/templates/linea/images/grey_arrow_to_top.png" class="arrow_to_top" />').prependTo('ul#nav > li.root.parent > ul li:first');
   
   
-  $('#nav li a').css({ 
-    backgroundColor : $('body').css('background-color')
-    });
   $('#nav > li a.current').css({
+    backgroundColor : $('body').css('background-color'),
     borderBottom : "1px solid " + $('body').css('background-color')
   });
 
