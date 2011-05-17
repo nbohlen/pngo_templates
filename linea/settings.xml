@@ -14,7 +14,6 @@
   </category>
   <category>
     <name>Navigation</name>
-    <setting>nav_hover_color</setting>
     <setting>nav_current_background_color</setting>
   </category>
   <category>

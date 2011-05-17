@@ -34,7 +34,7 @@ a:link, a:visited, a:active {
 
 /* reset backgrounds from site settings */
 
-#footer, #nav, #content, #sidebar, #subheader{
+#footer, #nav, #content, #sidebar, #subheader, #nav li a {
   background-color: transparent !important;
 }
 
