@@ -1,0 +1,438 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+
+body, html { height: 1}
+
+body {
+	font: 100%/1.5em 'trebuchet', sans-serif;
+	color: #444444;
+	background-color: #0072A4;
+	background-image: none;
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-position: center top;
+}
+
+a:focus {
+	outline: none;
+}
+
+hr {
+  border: none;
+	border-top: 1px #cccccc solid;
+	border-top-width: 1px;
+	clear: both;
+	height: 0;
+}
+
+/* `Headings
+----------------------------------------------------------------------------------------------------*/
+
+h1, h2, h3, h4 ,h5, h6 {
+  color: #0072A4;
+}
+
+h1 {
+	font-size: 2.8em;
+	line-height: 1.1em;
+}
+
+h2 {
+	font-size: 1.3em;
+	line-height: 1.1em;
+}
+
+h3 {
+	font-size: 1.1em;
+	line-height: 1.1em;
+}
+
+h4, h5, h6 {
+	font-size: 1em;
+	line-height: 1.1em;
+}
+
+
+/* `Spacing
+----------------------------------------------------------------------------------------------------*/
+
+ol {
+	list-style: decimal inside none;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: disc inside none;
+	margin: 0;
+	padding: 0;
+}
+
+a:link { text-decoration: none; color: #0072A4 }
+a:hover { text-decoration: none; }
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+section {
+	margin-bottom: 24px;
+}
+
+h2, h3 {
+  margin-bottom: 12px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* clearfix */
+.clearfix:after {content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.clearfix {display:inline-block;} /*Those two .clearfix have to be separate!)*/
+.clearfix {display:block;}
+
+/* gridframework */
+/*.col {position:relative;}
+.gu1{width: 23px;}
+.gu2{width: 70px;}
+.gu3{width: 117px;}
+.gu4{width: 164px;}
+.gu5{width: 211px;}
+.gu6{width: 258px;}
+.gu7{width: 305px;}
+.gu8{width: 352px;}
+.gu9{width: 399px;}
+.gu10{width: 446px;}
+.gu11{width: 493px;}
+.gu12{width: 540px;}*/
+
+
+/*
+
+Sticky Footer by Ryan Fait
+http://ryanfait.com/
+
+*/
+
+html, body {
+	height: 100%;
+}
+
+
+#footer, .push {
+	height: 70px; /* .push must be the same height as .footer */
+}
+
+
+.canvas {
+  position: relative;
+  margin: 0 auto;
+}
+
+#stage {
+  width: 960px;
+  margin: 5% auto;
+  position: relative;
+}
+
+#pagewrapper {
+  width: 600px;
+}
+
+#wrapper {
+  padding: 35px 30px 0 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin-bottom: -24px; /* the bottom margin is the negative value of the footer's height */
+}
+
+#main_header {
+  min-height: 120px;
+  margin-bottom: 10%;
+  display: block;
+}
+
+
+/* main sections */
+#main_header,
+#content,
+#gallery,
+#services,
+#downloads,
+#contact {
+  position:relative; 
+  margin-left:-24px;
+  padding-left: 24px;
+  width: 100%;
+  overflow: hidden;
+  clear: both;
+}
+
+#main_header.borderless {
+  margin: -35px 0 30px -54px;
+  width: 600px;
+}
+
+#address_hours,
+#contact_form { width: 258px; }
+#address_hours { position: absolute; top: 0; left: 24px;}
+#contact_form { overflow: hidden; margin-left: 257px; padding-left: 24px;}
+
+/*#services { width: 352px; float: left;}
+#downloads { width: 164px; float: right; padding-left: 24px; background: transparent url('../images/border_v.png') repeat-y scroll top left; }*/
+
+#services > p {
+   margin-bottom: 12px;
+}
+
+#services > ul {
+  margin: 12px 24px 24px;
+  list-style: none none;
+}
+
+#services > ul > li {
+  margin-bottom: 6px;
+}
+
+#services > ul > li:before {
+  content: '– ';
+}
+
+#gallery {
+  position:relative;
+}
+
+#gallery ul.images { width: 100%; list-style-type: none;}
+#gallery ul.images li { width: 164px; overflow: hidden; display: inline; height: 110px; float: left; margin-left: 24px; margin-bottom: 16px;}
+#gallery ul.images li:first-child {
+  margin-left: 0; 
+}
+#gallery ul.images li:nth-child(4) { 
+  margin-left: 0;
+}
+
+#map { margin-top: 8%; }
+
+
+#downloads ul {
+  list-style: none;
+}
+
+#downloads ul li {
+  position: relative;
+  line-height: 14px;
+  padding: 2px 0;
+  margin-bottom: 4px;
+}
+
+#downloads ul li:first-child {
+  border: none;
+}
+
+#downloads ul li:hover {
+  background-color: white;
+}
+
+#downloads ul li a:first-child {
+  display: block;
+  font-size: 0.7em;
+  padding-left: 25px;
+  background: url('../images/page_white_put_sw_lighten.png') no-repeat scroll 4px 2px;
+  line-height: 1.6em;
+}
+
+#downloads ul li a:first-child:hover {
+  text-decoration: underline;
+  background-image: url('../images/page_white_put.png');
+}
+
+#downloads ul li em {
+  font-weight: bold;
+  font-size: 0.55em;
+  font-style: normal;
+  padding-left: 25px;
+  line-height: 1.4em;
+}
+
+#contact {
+  position:relative;
+  margin-bottom: 24px;
+}
+
+#contact p {
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
+
+#contact p, h3 {
+  margin-bottom: 6px;
+}
+
+#contact #address,
+#contact #hours {
+  margin-bottom: 24px;
+}
+
+
+#footer {
+  background-color: #0072A4;
+  color: white;
+  margin-top: 24px;
+  padding: 20px 30px;
+  position: relative;
+  line-height: 0.9em;
+  height: 30px;
+  font-size: 0.7em;
+  text-align: right;
+}
+
+#footer nav ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+#footer nav ul li {
+  float: left;
+}
+
+#footer nav ul li a {
+  margin-left: 6px;
+  padding-left: 6px;
+}
+
+#footer a:link,
+#footer a:visited {
+  color: white;
+}
+
+
+
+ /* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)  
+    Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+   
+  #stage,
+  #pagewrapper {
+    width: 280px;
+  }
+   
+  h1 {
+    font-size: 1.8em;
+  }
+  
+  h2 {
+    font-size: 1.3em;
+  }
+  
+  section {
+    width: 100%;
+  }
+  
+  section div, a {
+    float: none !important;
+    margin-bottom: 20px;
+    text-align: left !important;
+    width: 100% !important;
+  }
+  
+  #address_hours{ width: 100%; }
+  #address_hours { position: relative; }
+  #contact_form { overflow: hidden; margin-left: 0; padding-left: 0; width: 96%;}
+  
+  #downloads ul li a {
+    margin-bottom: 0;
+    line-height: 30px;
+  }
+  
+  #gallery ul.images li { margin-left: 0; width: 100%;}
+  #services > ul { margin-left: 0; list-style: none inside;}
+   
+  html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; }
+}
+
+ /* 
+  * print styles
+  * inlined to avoid required HTTP connection www.phpied.com/delay-loading-your-print-css/ 
+  */
+ @media print {
+   * { background: transparent !important; color: #444 !important; text-shadow: none !important; }
+   a, a:visited { color: #444 !important; text-decoration: underline; }
+   a:after { content: " (" attr(href) ")"; } 
+   abbr:after { content: " (" attr(title) ")"; }
+   .ir a:after { content: ""; }  /* Don't show links for images */
+   pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+   thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */ 
+   tr, img { page-break-inside: avoid; }
+   @page { margin: 0.5cm; }
+   p, h2, h3 { orphans: 3; widows: 3; }
+   h2, h3{ page-break-after: avoid; }
+ }

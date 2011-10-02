@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<settings type="array">
+  <column>
+    <name>Allgemein</name>
+    <setting>headings_color</setting>
+    <setting>text_color</setting>
+    <setting>hover_color</setting>
+    <setting>body_background_color</setting>
+  </column>
+  <column>
+    <setting>content_background_color</setting>
+    <setting>footer_text_color</setting>
+    <setting>footer_background_color</setting>
+  </column>
+</settings>
